@@ -53,7 +53,20 @@ case "text":
     case "checkbox":
         return(
     <div>
+        <label for={props.controlName}>{props.controlName}</label>
         <input name={props.controlName} type="checkbox" onChange={(e)=> setText(e.target.value)} />
+    </div>);
+    break;
+
+     case "radio":
+        return(
+    <div>
+        <label for={props.controlName}>{props.controlName}</label>
+        
+        {props.dataObj.map((item, index) => (
+                    /*<option key={index} value={item}>{item}</option>*/
+                    <input name={props.item} type="radio" onChange={(e)=> setText(e.target.value)} />
+                ))}
     </div>);
     break;
 
