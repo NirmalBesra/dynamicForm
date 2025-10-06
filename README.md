@@ -68,3 +68,14 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+/** i am planning to create switch for each required control and use them for creating multiple forms */
+/* i want to add label using name props */
+/* now i want to submit the form from parent */
+/* instead of setting the logic of submitting into the child i want it (current form) to also derive from parent*/
+/*now i want it to pass the whole api and other things to be controlled from the parent and i want the features to be implemented like  allow it to have multiple forms */
+/*
+create a form component which will get the json obj from the parent app create the all fields using json get the submit logic from the parent json
+i can bind the url also to the specific form so it will submit that specific instance of form to the specific url
+*/
