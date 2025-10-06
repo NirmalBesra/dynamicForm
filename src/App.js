@@ -1,23 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
-
+import FormComponent from './components/Form';
 function App() {
+  var arrdata =  [24,25,1,3]
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <FormComponent controlName="Name" control="text" />
+      <FormComponent controlName="Name1" control="text" />
+      <FormComponent controlName="Year" control="date" />
+
+      <FormComponent controlName="dropdown1" control="dropdown" dataObj={arrdata} />
     </div>
   );
 }
