@@ -65,7 +65,7 @@ case "text":
         
         {props.dataObj.map((item, index) => (
                     /*<option key={index} value={item}>{item}</option>*/
-                    {item.map((secitem)=> (<input name={secitem} type="radio" onChange={(e)=> setText(e.target.value)} />))}
+                    item.map((secitem,secindex)=> (<input name={secitem} type="radio" onChange={(e)=> setText(e.target.value)} />))
                     
                 ))}
     </div>);
