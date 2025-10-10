@@ -3,7 +3,7 @@ import './App.css';
 import FormComponent from './components/Form';
 function App() {
   var arrdata =  [24,25,1,3]
-  var radioObj = [["name1","label1"],["name2","label2"]];
+  var radioObj = ["name1" ,"name1"];
   return (
     <div className="App">
       <FormComponent controlName="Name" control="text" />
